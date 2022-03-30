@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Matt Dean dot dev</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Matt Dean</h1>
+        <p class="subtitle">Here you can find my <strong>projects</strong></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="card animated-margins">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h2 class="is-size-4">COVID-19 Data Tracker</h2>
+                  <p>This app collects information from a few sources and provides some data on current recovery rates.</p>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <!-- <a href="#" class="card-footer-item"><i class="fa-brands fa-github"></i></a> -->
+                <a href="https://mattdean.dev/covid19datatracker" class="card-footer-item">
+                  <i class="fa-solid fa-arrow-up-right-from-square"> </i>
+                </a>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card animated-margins">
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum
+                  sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet
+                  fermentum.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card animated-margins">
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum
+                  sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet
+                  fermentum.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var target = document.querySelector('.card.animated-margins');
+      target.addEventListener('mouseover', mOver, false);
+      target.addEventListener('mouseout', mOut, false);
+
+      function mOver() {
+        target.setAttribute('style', 'margin-top: -1rem');
+      }
+
+      function mOut() {
+        target.setAttribute('style', 'margin-top: 0rem;');
+      }
+    </script>
+  </body>
+</html>
